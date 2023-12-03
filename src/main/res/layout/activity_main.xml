@@ -1,0 +1,39 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- TimePicker centered in the parent -->
+    <TimePicker
+        android:id="@+id/timePicker"
+        android:layout_width="387dp"
+        android:layout_height="363dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Set Alarm button centered horizontally -->
+    <Button
+        android:id="@+id/set_alarm_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        android:text="Set Alarm" />
+
+    <!-- Divider to visually separate sections -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="?android:attr/listDivider" />
+
+    <!-- RecyclerView below the divider -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/alarm_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+</LinearLayout>
